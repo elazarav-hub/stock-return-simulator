@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'eToro';
+  src: url('https://design-catalog-pied.vercel.app/fonts/eToro-VF-v0.7.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'eToroMono';
+  src: url('https://design-catalog-pied.vercel.app/fonts/eToro-Mono-VF-v0.7.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body {
+  font-family: 'eToro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  line-height: 1.5;
+}
+
+body {
+  background: #F7F7F7;
+  color: #1B1D21;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+html.dark body {
+  background: #0B0D10;
+  color: #FFFFFF;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: #E0E0E0;
+  outline: none;
+  transition: background 0.15s ease;
+}
+
+html.dark input[type="range"] {
+  background: #35393E;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #0EB12E;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+html.dark input[type="range"]::-webkit-slider-thumb {
+  border-color: #1B1D21;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #0EB12E;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+html.dark input[type="range"]::-moz-range-thumb {
+  border-color: #1B1D21;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
